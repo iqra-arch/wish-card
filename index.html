@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year 2025 | Wish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         :root {
+            --background-color: rgb(75, 2, 75);
+            --primary-color: purple;
+            --text-color: white;
+            --button-hover-bg: bisque;
+            --button-hover-color: purple;
+        }
+        body{
+            background-color: var(--background-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation-name:color;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes color{
+            0%{
+              background-color: rgb(202, 74, 202);
+            }
+            50%{
+                background-color: rgb(161, 51, 161);
+            }
+            80%{
+                background-color: rgb(196, 67, 196);
+            }
+            100%{
+                background-color: rgb(166, 66, 166);
+            }
+        }
+        
+
+        
+
+        button:hover {
+            background-color: var(--button-hover-bg);
+            color: var(--button-hover-color);
+        }
+        button{
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: 3px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 6px 4px rgba(226, 225, 225, 0.5);
+            
+            font-size: 32px;
+            padding: 9px;
+            font-family: 'sofia', sans-serif;
+            animation-name: border;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes border{
+            0%{
+                border: 2px solid purple;
+            }
+            50%{
+                border: 2px solid rgb(241, 210, 241);
+            }
+            80%{
+                border: 2px solid rgb(163, 167, 122);
+            }
+            100%{
+                border: 2px solid rgb(147, 150, 83);
+            }
+            }
+            
+        .crave:hover{
+            content: " ";
+            padding: 15px;
+            border-bottom: 2px solid rgb(219, 197, 219);
+            transition: 0.7s;
+            
+        }
+        /* button:hover{
+            background-color: bisque;
+            color: purple;
+            transition: 0.6s;
+            transform: scale(1.1);
+        } */
+        .card{
+            display: none;
+            border:5px solid rgb(104, 5, 104);
+            border-radius: 50%;
+            width: 600px;
+            height: 600px;
+            background:linear-gradient(to right, #bdadbe, #dcdca3);
+            
+            animation-name: circle;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            box-shadow: 0px 0px 8px 10px rgba(217, 214, 214, 0.5);
+        }
+        @keyframes circle{
+            0%{
+            border: 4px solid rgb(202, 98, 202);
+            
+            box-shadow:  0px 0px 8px 10px rgba(233, 105, 214, 0.5);
+            }
+            50%{
+                border: 4px solid rgb(99, 21, 99);
+                box-shadow:  0px 0px 8px 10px rgba(207, 198, 206, 0.6);
+
+            }
+            100%{
+                border: 4px solid rgb(97, 8, 97);
+                box-shadow:  0px 0px 8px 10px rgba(220, 221, 147, 0.8);
+
+            }
+        }
+        .card:hover{
+    background:linear-gradient(to right,#dcdca3, #e4cfe6);
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: 'sofia',sans-serif;
+    color: rgb(84, 3, 84);
+    margin: 3px;
+   text-align: center;
+   position: relative;
+   bottom: 0%;
+  
+}
+#flower{
+    animation-name:flower ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes flower{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#show {
+    display: inline-block; /* Ensure the span can be animated */
+    animation-name: image;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes image {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(12px); /* Move down 20px */
+    }
+    100% {
+        transform: translateY(0); /* Back to the starting position */
+    }
+}
+.fa-solid{
+font-size: 120px;
+color: rgb(98, 4, 98);
+animation-name: gift;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+@keyframes gift{
+    0% {
+        transform: rotate(0); /* Starting position */
+    }
+    50% {
+        transform: rotate(13deg); /* Move down 20px */
+    }
+    100% {
+        transform: rotate(-17deg); /* Back to the starting position */
+    }
+    
+}
+body{
+    overflow-x: hidden;
+}
+@media (max-width:480px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .card {
+        width: 90%; /* Use a percentage-based width to make it adaptive */
+        height: auto; /* Allow height to adjust based on content */
+        border-radius: 20px; /* Adjust border radius */
+        padding: 10px; /* Add some padding for spacing */
+        box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.2); /* Slightly subtler shadow */
+    }
+}
+@media (max-width:600px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+}
+@media (max-width:560px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    .card {
+        width: 90%; /* Use a percentage-based width to make it adaptive */
+        height: auto; /* Allow height to adjust based on content */
+        border-radius: 20px; /* Adjust border radius */
+        padding: 10px; /* Add some padding for spacing */
+        box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.2); /* Slightly subtler shadow */
+    }
+
+    
+}
+@media (max-width: 354px) {
+    body{
+        overflow-x: hidden;
+     
+    }
+    .card {
+        width: 66%; /* Use a percentage-based width to make it adaptive */
+        height: auto; /* Allow height to adjust based on content */
+        border-radius: 20px; /* Adjust border radius */
+        padding: 10px; /* Add some padding for spacing */
+        box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.2); /* Slightly subtler shadow */
+    }
+
+    .new h1 {
+        font-size: 18px; /* Scale down the heading font size */
+        margin: 10px 0;
+    }
+
+    .new p {
+        font-size: 14px; /* Reduce paragraph font size */
+        line-height: 1.5; /* Adjust line height for readability */
+        margin: 10px 0;
+    }
+
+    #show img {
+        width: 20px; /* Scale down emoji image */
+        height: 20px;
+    }
+
+    #flower {
+        font-size: 20px; /* Adjust flower emoji size */
+    }
+
+    button {
+        font-size: 16px; /* Adjust button font size */
+        padding: 6px; /* Reduce padding for smaller screens */
+    }
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="crave">
+        <button id="b" onclick="show_card()">
+            Tap to Crave!
+        </button>
+        
+    </div>
+    <br>
+    <div class="f">
+        <i class="fa-solid fa-gift"></i>
+    </div>
+      
+    <br>
+   <!-- <div class="flex"> -->
+    <div class="card">
+        
+        
+        <div class="new">
+            <h1>In 2025<span id="show"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f90d.svg" alt="" height="37px" width="37px"></span>!</h1>
+            <p style="font-size: large;" >Wishing you a joyful and prosperous New Year <b>2025</b>! <br> May this year bring endless happiness, good health, <br>and success to your life. <br>As we step into a new chapter, may your dreams take flight and your goals turn into achievements. Cherish every moment with your loved ones and create memories that last a lifetime. Let this year be filled with laughter, love, and new opportunities that open doors to greatness. To my friends, thank you for being my constant source of joy, and to my family, your love is my greatest blessing. <br> Here's to a year of fresh beginnings, exciting adventures, and unforgettable moments. <br>Together, let’s make <b>2025</b> a year to remember. <br><span style="font-size: 30px; "><strong>Happy New Year! <span id="flower" style="display: none;">🌸</span></strong></span></p>
+        </div>
+      
+    </div>
+    <!-- </div> -->
+    
+     </div>
+</body>
+<script>
+    function show_card(){ 
+    // const c2 = document.getElementByClassName('flex');
+    const cards = document.getElementsByClassName('card');
+    const c = document.getElementById('flower').style.display='block';
+    
+    const btn=document.getElementById('b').remove(); // Get all elements with the class 'card'
+    const btn2 = document.getElementsByClassName('f')[0]; // Access the first element in the collection
+btn2.remove();
+    for (let i = 0; i < cards.length; i++) {
+        // cards[i].style.display = 'block';
+        fadeIn(cards[i], 2000); // Set display to 'block' for each element
+    }
+    
+    }
+    function fadeIn(element, duration) {
+    let opacity = 0;
+    element.style.display = 'block';
+    // Ensure the element is visible
+    element.style.opacity = opacity; // Set initial opacity to 0
+
+    // Gradually increase opacity to 1 over the specified duration
+    const interval = 50; // Time interval for each opacity change (ms)
+    const increment = 0.05; // Amount to increase opacity each time
+
+    const fadeInterval = setInterval(() => {
+        opacity += increment;
+        if (opacity >= 1) {
+            opacity = 1; // Ensure opacity does not exceed 1
+            clearInterval(fadeInterval); // Stop the interval when fully visible
+        }
+        element.style.opacity = opacity;
+    }, interval);
+}
+
+
+</script>
+</html>
